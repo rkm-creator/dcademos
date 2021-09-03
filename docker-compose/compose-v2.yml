@@ -2,9 +2,8 @@ version: '3'
 services:
   springbootapp:
     image: edureka01/spring-boot-app:latest
-    container_name: springboot
     ports:
-      - 8010:8080
+      - 8080
     depends_on:
       - mongo
     restart: on-failure
@@ -14,6 +13,6 @@ services:
     ports: # for demo/debug purpose only
       - 27017:27017
     volumes:
-      - /home/compose/data:/data/db
-      - /home/compose/data-bkp:/data/bkp
+      - /data/db
+      - /data/bkp
     restart: always
