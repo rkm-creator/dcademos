@@ -1,0 +1,14 @@
+version: '3'
+services:
+  mycasestudy:
+    image: nginx
+    ports:
+      - 8080
+    restart: on-failure
+	volumes:
+	  - /home/ec2-user/dockerContent/app:/usr/share/nginx/html
+	  
+	  
+docker-compose up -d
+docker-compose scale mycasestudy=5
+	  
