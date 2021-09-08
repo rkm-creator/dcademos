@@ -19,7 +19,7 @@ spec:
       port: 22
     privateInterface: eth0
   mke:
-    version:3.3.7
+    version: 3.3.7
     adminUsername: admin
     adminPassword: p@ssw0rd_123
     installFlags:
